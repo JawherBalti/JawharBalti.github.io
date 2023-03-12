@@ -1,3 +1,3 @@
 # This is my personal portfolio
 
-### https://jawherbalti.github.io/JawharBalti.github.io/
+### https://jawherbalti.github.io/portfolio
