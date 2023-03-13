@@ -276,7 +276,7 @@ p {
   font-size: 0.7rem;
   font-weight: 900;
   color: #ffffff;
-  background-color: #b62222;
+  background-color: #000000;
   text-align: center;
   padding: 0.6rem;
   z-index: 1;
@@ -284,12 +284,16 @@ p {
   border-radius: 10px;
   cursor: pointer;
   border: none;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #000000;
 }
 
 .button:hover {
-  color: white;
+  color: #000000;
   scale: 1;
-  background-color: #b50f0f;
+  background-color: #ffffff;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #000000;
 }
 
 .project__preview {
