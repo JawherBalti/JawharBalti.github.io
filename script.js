@@ -1,3 +1,8 @@
+const year = new Date().getFullYear();
+const footer = document.querySelector(".footer");
+var text = document.createTextNode(" " + year);
+footer.appendChild(text);
+
 const slides = document.querySelector(".slides");
 const scrollUp = document.querySelector(".scroll__up");
 const scrollDown = document.querySelector(".scroll__down");
