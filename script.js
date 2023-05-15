@@ -37,6 +37,21 @@ navLinksBtn.addEventListener("click", () => {
   }
 });
 
+let wheeling = false;
+var scrollTimer = false;
+
+window.addEventListener("wheel", function (e) {
+  if (!wheeling) {
+    if (e.deltaY > 0) changeSlide("down");
+    if (e.deltaY < 0) changeSlide("up");
+    wheeling = true;
+  }
+  window.clearInterval(scrollTimer);
+  scrollTimer = this.window.setTimeout(function () {
+    wheeling = false;
+  }, 100);
+});
+
 scrollUp.addEventListener("click", () => {
   changeSlide("up");
 });
