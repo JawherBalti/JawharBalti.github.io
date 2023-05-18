@@ -37,9 +37,30 @@ navLinksBtn.addEventListener("click", () => {
   }
 });
 
+var ts;
+var te;
+
+let touching = false;
+var touchTimer = false;
+window.addEventListener("touchstart", function (e) {
+  ts = e.touches[0].clientY;
+  console.log(e.touches[0].clientY);
+});
+window.addEventListener("touchmove", function (e) {
+  te = e.touches[0].clientY;
+  if (!touching) {
+    if (ts > te + 15) changeSlide("down");
+    if (ts < te - 15) changeSlide("up");
+    touching = true;
+  }
+  window.clearInterval(touchTimer);
+  touchTimer = this.window.setTimeout(function () {
+    touching = false;
+  }, 100);
+});
+
 let wheeling = false;
 var scrollTimer = false;
-
 window.addEventListener("wheel", function (e) {
   if (!wheeling) {
     if (e.deltaY > 0) changeSlide("down");

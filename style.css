@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Mesmerize", sans-serif;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,6 +142,7 @@ p {
 
 .about {
   margin: auto;
+  font-size: 1.5rem;
   width: 60%;
   line-height: 4rem;
   font-family: sans-serif;
@@ -494,6 +495,7 @@ footer {
   bottom: 10%;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
 .flicker {
@@ -818,6 +820,7 @@ footer {
   .about {
     width: 65%;
     line-height: 3rem;
+    font-size: 1.2rem;
   }
 
   .projects__swiper {
@@ -948,6 +951,7 @@ footer {
   .about {
     width: 80%;
     line-height: 3rem;
+    font-size: 1.1rem;
   }
 
   .projects__swiper {
