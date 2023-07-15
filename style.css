@@ -567,42 +567,42 @@ footer {
 
 @media (min-width: 1367px) {
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   h5 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h6 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   p {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   span,
   i {
-    font-size: 2.1rem;
-    margin-top: 0.8rem;
+    font-size: 1.8rem;
+    margin-top: 0.7rem;
   }
 
   footer {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .nav__right {
-    width: 40%;
+    width: 30%;
   }
 
   .logo {
-    width: 20rem;
-    height: 6rem;
+    width: 18rem;
+    height: 5rem;
   }
 
   .scroll__btn {
@@ -612,8 +612,8 @@ footer {
   }
 
   .projects__swiper {
-    width: 65rem;
-    height: 25rem;
+    width: 60rem;
+    height: 20rem;
   }
 
   .project__info {
@@ -627,24 +627,24 @@ footer {
   }
 
   .project__technologies > li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
   }
 
   .project__description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
   }
 
   .project__preview {
-    bottom: 15%;
+    bottom: 5%;
     width: 10rem;
     height: 18rem;
   }
 
   .project__preview--web {
     bottom: 30%;
-    width: 18rem;
+    width: 16rem;
     height: 10rem;
   }
 
@@ -656,9 +656,9 @@ footer {
   }
 
   .button {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 900;
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
 
   .skill__container {
@@ -682,6 +682,22 @@ footer {
 
   .skills__container {
     width: 90%;
+  }
+
+  .contact__email > i,
+  .contact__email > span,
+  .contact__phone > i,
+  .contact__phone > span,
+  .contact__links > i {
+    font-size: 1.5rem;
+  }
+  .links > a > i {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -818,9 +834,9 @@ footer {
   }
 
   .about {
-    width: 65%;
+    width: 70%;
     line-height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .projects__swiper {
@@ -949,9 +965,9 @@ footer {
   }
 
   .about {
-    width: 80%;
+    width: 75%;
     line-height: 3rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   .projects__swiper {
