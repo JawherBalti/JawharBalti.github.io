@@ -12,6 +12,7 @@ const projectsLink = document.querySelector("#link__projects");
 const skillsLink = document.querySelector("#link__skills");
 const contactLink = document.querySelector("#link__contact");
 
+const navBar = document.querySelector("nav")
 const navLinksSmall = document.querySelector(".nav__links");
 const aboutMeLinkSmall = document.querySelector("#link__aboutme--small");
 const projectsLinkSmall = document.querySelector("#link__projects--small");
@@ -62,6 +63,7 @@ window.addEventListener("touchmove", function (e) {
 let wheeling = false;
 var scrollTimer = false;
 window.addEventListener("wheel", function (e) {
+  
   if (!wheeling) {
     if (e.deltaY > 0) changeSlide("down");
     if (e.deltaY < 0) changeSlide("up");
@@ -158,13 +160,24 @@ contactLinkSmall.addEventListener("click", () => {
 const changeSlide = (direction) => {
   if (direction === "down") {
     activeSlideIndex++;
-    if (activeSlideIndex > 0) scrollUp.classList.remove("hidden");
+    if (activeSlideIndex > 0) {
+      scrollUp.classList.remove("hidden")
+      navBar.classList.remove("hidden")
+      navBar.classList.add("show__nav__down")
+      navBar.classList.remove("show__nav__up")
+
+    }
     if (activeSlideIndex === 4) scrollDown.classList.add("hidden");
     if (activeSlideIndex > slidesLength - 1)
       activeSlideIndex = slidesLength - 1;
   } else if (direction === "up") {
     activeSlideIndex--;
-    if (activeSlideIndex === 0) scrollUp.classList.add("hidden");
+    if (activeSlideIndex === 0) {
+      scrollUp.classList.add("hidden");
+      navBar.classList.remove("show__nav__down")
+      navBar.classList.add("show__nav__up")
+      navBar.classList.add("hidden")
+    }
     if (activeSlideIndex < 4) scrollDown.classList.remove("hidden");
     if (activeSlideIndex < 0) activeSlideIndex = 0;
   }
