@@ -14,13 +14,13 @@
   </head>
   <body>
     <header>
-      <nav class="hidden">
+      <nav>
         <img class="logo" src="assets/logo.png" />
         <div class="nav__right">
-          <a id="link__aboutme">About Me</a>
-          <a id="link__projects">Projects</a>
-          <a id="link__skills">Skills</a>
-          <a id="link__contact">Contact</a>
+          <a id="link__aboutme" href="#about__section">About Me</a>
+          <a id="link__projects" href="#projects__section">Projects</a>
+          <a id="link__skills" href="#skills__section">Skills</a>
+          <a id="link__contact" href="#contact__section">Contact</a>
         </div>
         <div class="bars hide">
           <i class="fas fa-bars fa-2x"></i>
@@ -29,32 +29,32 @@
     </header>
 
     <main class="slides__container">
-      <button class="scroll__btn scroll__up hidden">&#8896;</button>
-      <button class="scroll__btn scroll__down">&#8897;</button>
+      <!-- <button class="scroll__btn scroll__up hidden">&#8896;</button>
+      <button class="scroll__btn scroll__down">&#8897;</button> -->
       <div class="nav__links hide__menu">
-        <a id="link__aboutme--small">About Me</a>
-        <a id="link__projects--small">Projects</a>
-        <a id="link__skills--small">Skills</a>
-        <a id="link__contact--small">Contact</a>
+        <a id="link__aboutme--small" href="#about__section">About Me</a>
+        <a id="link__projects--small" href="#projects__section">Projects</a>
+        <a id="link__skills--small" href="#skills__section">Skills</a>
+        <a id="link__contact--small" href="#contact__section">Contact</a>
       </div>
-      <div class="slides">
-        <section class="info__container">
+      <div class="slides scroll__container">
+        <section class="info__container scroll__item">
           <div class="info">
             <h1 class="flicker">Jawhar Balti</h1>
             <h5>Telecommunications Engineer & Developer</h5>
           </div>
         </section>
 
-        <section class="aboutme">
+        <section class="aboutme scroll__item" id="about__section">
           <h6>About me</h6>
           <p class="about about__hide">
             A telecommunications engineer with passion for coding and building
-            applications. When I am not coding, you will find me playing video
-            games or in the chess club.
+            applications. I write clean and efficient code to build modern and scalable web and mobile applications.
+            I get excited about opportunities where I get to collaborate with a team to turn ideas into robust applications with a good user experience.
           </p>
         </section>
 
-        <section class="projects">
+        <section class="projects scroll__item" id="projects__section">
           <h6>Projects</h6>
           <div class="swiper projects__swiper">
             <!-- Additional required wrapper -->
@@ -227,7 +227,7 @@
           </div>
         </section>
 
-        <section class="skills">
+        <section class="skills scroll__item" id="skills__section">
           <h6>Skills</h6>
           <div class="skills__container">
             <div class="skill__container skill__hide">
@@ -556,7 +556,7 @@
           </div>
         </section>
 
-        <section class="contact">
+        <section class="contact scroll__item" id="contact__section">
           <h6>Contact</h6>
           <div class="contact__info contact__hide">
             <div class="contact__email">

@@ -7,7 +7,12 @@
   scroll-behavior: smooth !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  scroll-behavior: smooth;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -29,7 +34,8 @@ nav {
   width: 100%;
   max-width: 100vw;
   background-color: transparent;
-  opacity: 0;
+  height: 70px;
+  /* opacity: 0; */
 }
 
 .show__nav__down {
@@ -108,6 +114,21 @@ ul {
   color: #adadad;
 }
 
+.scroll__container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll__container {
+  height:  100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Snap strictly along the y-axis */
+}
+
+.scroll__item {
+  height:  100vh; /* Full viewport height */
+  scroll-snap-align: start; /* Align the top edge of the item with the top edge of the container */
+}
+
 .slides__container {
   position: relative;
   overflow: hidden;
@@ -154,7 +175,7 @@ ul {
 
 .about {
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 60%;
   line-height: 4rem;
   font-family: sans-serif;
@@ -247,6 +268,7 @@ ul {
 .project__technologies {
   list-style-type: none;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   column-gap: 0.2rem;
   margin-bottom: 0.4rem;
@@ -595,7 +617,7 @@ footer {
   }
 
   a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   p {
@@ -648,7 +670,7 @@ footer {
   }
 
   .project__description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 900;
   }
 
